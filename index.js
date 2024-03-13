@@ -17,6 +17,14 @@ $(document).ready(function() {
   
 
   $(document).ready(function () {
+    const commands = {
+        'hello': 'Hi there! How can I help you?',
+        'how are you': 'I\'m just a bot, but thanks for asking!',
+        'time': `It's currently ${new Date().toLocaleTimeString()}.`,
+        'weather': 'Sorry, I am not equipped to provide weather information.',
+        'help': 'Here are some commands you can try: hello, how are you, time, weather, help.'
+    };
+
     $('#userInput').keypress(function (e) {
         // Check if Enter key is pressed
         if (e.which === 13) { 
@@ -28,10 +36,14 @@ $(document).ready(function() {
         var userInput = $('#userInput').val();
         if (userInput.trim() !== '') {
             $('#chat-box').append('<div class="user-message">' + userInput + '</div>');
-            $('#userInput').val('');
+         
             // Simulate bot response (you can replace this with actual bot logic)
             setTimeout(function () {
-                $('#chat-box').append('<div class="bot-message">This is a bot response</div>');
+                const message = userInput.trim().toLowerCase();
+               if(message){
+                    
+                const reply=commands[message] || "This is a bot response"
+                $('#chat-box').append('<div class="bot-message">'+ reply +'</div>');
                 $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight );
                 var initialMarginBottom = parseInt($('#chat-box').css('margin-bottom'));
                 while (initialMarginBottom>=0) {
@@ -39,8 +51,10 @@ $(document).ready(function() {
                     var initialMarginBottom = initialMarginBottom - 5; // Decrease by 5 pixels
                     $('#chat-box').css('margin-bottom', initialMarginBottom + 'px');
                 }
+            }
                 
             }, 500);
+            $('#userInput').val('');
         }
     }
     
@@ -76,6 +90,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    const commands = {
+        'hello': 'Hi there! How can I help you?',
+        'how are you': 'I\'m just a bot, but thanks for asking!',
+        'time': `It's currently ${new Date().toLocaleTimeString()}.`,
+        'weather': 'Sorry, I am not equipped to provide weather information.',
+        'help': 'Here are some commands you can try: hello, how are you, time, weather, help.'
+    };
     const recognition = new webkitSpeechRecognition();
 
             // Set recognition properties
@@ -91,10 +112,14 @@ $(document).ready(function() {
               if (result.trim() !== '') {
                 $('#userInput').val(result);
                 $('#chat-box').append('<div class="user-message">' + result + '</div>');
-                $('#userInput').val('');
+              
                 // Simulate bot response (you can replace this with actual bot logic)
                 setTimeout(function () {
-                    $('#chat-box').append('<div class="bot-message">This is a bot response</div>');
+                    const message = result.trim().toLowerCase();
+                   if(message){
+                        
+                    const reply=commands[message] || "This is a bot response"
+                    $('#chat-box').append('<div class="bot-message">'+reply+'</div>');
                     $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight );
                     var initialMarginBottom = parseInt($('#chat-box').css('margin-bottom'));
                     while (initialMarginBottom>=0) {
@@ -102,8 +127,10 @@ $(document).ready(function() {
                         var initialMarginBottom = initialMarginBottom - 5; // Decrease by 5 pixels
                         $('#chat-box').css('margin-bottom', initialMarginBottom + 'px');
                     }
+                }
                     
                 }, 500);
+                $('#userInput').val('');
             }
             };
               // Handle recognition start
