@@ -90,7 +90,8 @@ display: flex;
 .chat-box {
     margin-bottom: 123px;
     overflow-y: auto;
-    max-height: 300px;
+    max-height: 270px;
+    
 }
 .bot-message {
     background-color: #aed6f1;
