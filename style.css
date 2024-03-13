@@ -51,7 +51,9 @@
     cursor: pointer;
     background-color: #e9ecef;
     font-size: 10px;
+    
 }
+
 
 #header{
   
@@ -128,3 +130,8 @@ display: flex;
 #voice-mute{
     display: none;
 }
+
+
+.custom-navbar-bg {
+    background-color: #ffb6c1; /* Light pink color */
+  }

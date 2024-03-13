@@ -3,10 +3,12 @@ $(document).ready(function() {
     $('#dark-mode-toggle').change(function () {
         if ($(this).is(':checked')) {
             $('body').addClass('bg-dark text-white');
-            $('.navbar').removeClass('navbar-light bg-light').addClass('navbar-dark bg-dark');
+            $('.navbar').removeClass('navbar-light bg-light').addClass('navbar-dark text-white bg-dark');
+            $('#chat-cross').css('background-color', 'blue');
         } else {
             $('body').removeClass('bg-dark text-white');
-            $('.navbar').removeClass('navbar-dark bg-dark').addClass('navbar-light bg-light');
+            $('.navbar').removeClass('navbar-dark text-white bg-dark').addClass('navbar-light custom-navbar-bg');
+            $('#chat-cross').css('background-color', 'white');
         }
     });
   });
