@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+          transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <img class="guy-nav"src="./img/guy.jpg" alt="guy Icon">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+      <label class="form-check-label" for="dark-mode-toggle">Dark Mode</label>
+    </div>
+  </div>
+  </nav>
+
+<div class="container-fluid mt-4">
+    <div class="form-group has-search">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      
+    <div class="chat-icon position-fixed fixed-bottom pr-3 pb-3 ">
+        <img class="bot-icon"src="./img/bot.jpg" alt="Chat Icon" id="bot">
+    </div>
+
+</div>
+<div class="container chat-container fixed-bottom " id="chatModal">
+    <i class="fas fa-times" id="chat-cross"></i>
+    <div id="header">
+      <h1 id="text-chat">Chatter box!</h1>
+   
+    </div>
+    <div >
+        <div class="chat-box" id="chat-box">
+          <div class="bot-message">Hello! How can I assist you today?</div>
+         
+        </div>
+          <div id="input-section">
+            
+          <input id="userInput" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+        <div class="voice">
+          <svg id="voice-icon"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+            <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"/>
+          </svg>
+          <svg id="voice-mute"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-mute" viewBox="0 0 16 16">
+            <path d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4 4 0 0 0 12 8V7a.5.5 0 0 1 1 0zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a5 5 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4m3-9v4.879l-1-1V3a2 2 0 0 0-3.997-.118l-.845-.845A3.001 3.001 0 0 1 11 3"/>
+            <path d="m9.486 10.607-.748-.748A2 2 0 0 1 6 8v-.878l-1-1V8a3 3 0 0 0 4.486 2.607m-7.84-9.253 12 12 .708-.708-12-12z"/>
+          </svg>
+        </div>
+          <a  class="ms-3"  id="send-btn">
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+</div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

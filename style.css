@@ -1,0 +1,128 @@
+.has-search .form-control {
+    padding-left: 2.375rem;
+    max-width: 420px;
+    background: purple;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 69rem;  
+   
+}
+.bot-icon{
+    cursor: pointer;
+}
+.guy-nav{
+    height:50px;
+    width:50px;
+}
+.bot-icon{
+    height:150px;
+    width:200px;
+}
+#chatModal{
+    display: none;
+    max-width: 250px;
+    background: purple;
+    left:1014px;
+}
+#chat-cross{
+  
+    position: absolute;
+    top: -13px;
+    right: -9px; 
+          
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    font-size: 10px;
+}
+
+#header{
+  
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(28, 27, 27);
+    margin-bottom: 2px;
+    #text-chat{
+        font-size: 20px;
+        font-weight: 5px;
+        padding-left: 5px;
+        font-family:cursive;
+        color: white; 
+        border-radius: 1px;
+        margin-left: 66px;
+        margin-bottom: 2px;
+    }
+}
+#message-section{
+    margin-top: 211px;
+    background-color: white;
+    margin-right: 106px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+#input-section{
+width: 230px;
+display: flex;
+}
+.chat-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.chat-box {
+    margin-bottom: 123px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+.bot-message {
+    background-color: #aed6f1;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+.user-message {
+    background-color: #d6e9c6;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.voice{
+    margin-right: -10px;
+    margin-left: 4px ;
+    cursor: pointer;
+}
+
+#send-btn{
+    cursor:pointer
+}
+
+.listening-text {
+    display: none;
+}
+#voice-mute{
+    display: none;
+}
