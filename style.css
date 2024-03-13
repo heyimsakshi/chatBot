@@ -37,7 +37,8 @@
     display: none;
     max-width: 250px;
     background: purple;
-    left:1014px;
+    left:auto;
+    margin-right:6px;
 }
 #chat-cross{
   
@@ -82,7 +83,7 @@ display: flex;
 }
 .chat-container {
     max-width: 500px;
-    margin: auto;
+   
     padding: 20px;
 }
 
