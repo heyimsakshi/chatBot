@@ -1,0 +1,3 @@
+export function assistMe(){
+    alert("Welcome to Chat UI! There is a chat bot and when you click the bot there is a chat box opened and you can either write message or speak these 5 message to the bot: hello, how are you, time, weather, help and eventually it will reply. There is a toggle button in the navigation bar where you can change the modes as per your wish. There is a search bar below the navgation where you can search the restaurant. ");
+}
