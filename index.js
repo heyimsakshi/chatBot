@@ -1861,7 +1861,7 @@ $(document).ready(function() {
                 const message = userInput.trim().toLowerCase();
                if(message){
                     
-                const reply=commands[message] || "This is a bot response"
+                const reply=commands[message] || "Hello, I am here to help you. I am a AI trained bot"
                 $('#chat-box').append('<div class="bot-message">'+ reply +'</div>');
                 $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight );
                 var initialMarginBottom = parseInt($('#chat-box').css('margin-bottom'));
@@ -1905,7 +1905,7 @@ $("#chat-cross").click(function(){
 })
 // Assisted access for first time users
 $(document).ready(function() {
-    alert("Welcome to Chat UI! You can type your messages in the input box and click 'Send'. You can also toggle dark mode using the 'Dark Mode' button.");
+    alert("Welcome to Chat UI! There is a chat bot and when you click the bot there is a chat box opened and you can either write message or speak these 5 message to the bot: hello, how are you, time, weather, help and eventually it will reply. There is a toggle button in the navigation bar where you can change the modes as per your wish. There is a search bar below the navgation where you can search the restaurant. ");
 });
 
 $(document).ready(function() {
