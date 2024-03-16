@@ -6,6 +6,6 @@ To run locally
 - You will be able to view the website
 
 To run through URL
-- Open chrome and use this link: https://storage.googleapis.com/heyiamsakshi/chatBot/src/index.html
+- Open chrome and use this [link]: (https://storage.googleapis.com/heyiamsakshi/chatBot/src/index.html)
 
 ThankYou!
