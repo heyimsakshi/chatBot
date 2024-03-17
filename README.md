@@ -7,6 +7,6 @@ To run locally
 
 To run through URL
 - Open chrome and use this [link](https://storage.googleapis.com/heyiamsakshi/chatBot/src/index.html)
-- You can watch the video [here] (https://watch.screencastify.com/v/Bz6QaPyII5XySRcZRImO)
+- You can watch the video [here](https://watch.screencastify.com/v/Bz6QaPyII5XySRcZRImO)
 
 ThankYou!
